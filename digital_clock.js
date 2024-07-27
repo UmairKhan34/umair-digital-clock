@@ -12,7 +12,9 @@ async function doSomething() {
         resolve = time;
         console.log(resolve);
       })
-      .catch((error) => console.log(error))
+      .catch((error) => {
+        console.log(error);
+      })
       .finally(() => {
         console.log("Finally");
       });
