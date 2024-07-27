@@ -1,6 +1,7 @@
 async function doSomething() {
+  const time = new Date();
+
   try {
-    const time = new Date();
     console.log(`Digital Clock: ${time}`);
     await new Promise((resolve) => {
       setTimeout(() => {
